@@ -243,8 +243,8 @@ namespace KinectSkittles
 						}
 
 						//set the color
-						Color pixelColor = new Color(intensity, intensity, intensity);
-						Skittles[pixelIndex].AverageColor.Add(pixelColor.ToVector3());
+						Color pixelColor = new Color(intensity, intensity, intensity, 255 - intensity);
+						Skittles[pixelIndex].AverageColor.Add(pixelColor.ToVector4());
 						Skittles[pixelIndex].Scale = scale;
 					}
 				}
